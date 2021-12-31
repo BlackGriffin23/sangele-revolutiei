@@ -1,0 +1,394 @@
+### CIVIL WAR TREE ###
+
+shared_focus = {
+	id = GRW_liberation_is_nigh
+	icon = 
+	cost = 4.3
+	
+	x = 12
+	y = 0
+	
+	ai_will_do = {
+		factor = 100
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_famine_situation
+	icon = 
+	cost = 2
+	
+	x = 11
+	y = 1
+	
+	prerequisite = { GRW_liberation_is_nigh }
+	
+	ai_will_do = {
+		factor = 100
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_our_cause
+	icon = 
+	cost = 2
+
+	x = 12
+	y = 1
+	
+	prerequisite = { GRW_liberation_is_nigh }
+	
+	ai_will_do = {
+		factor = 50
+	}
+	
+	completion_reward = {
+	}
+}
+
+
+shared_focus = {
+	id = GRW_revolutionary_press
+	icon = 
+	cost = 2
+	
+	x = 13
+	y = 1
+	
+	prerequisite = { GRW_liberation_is_nigh }
+	
+	ai_will_do = {
+		factor = 20
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_last_push
+	icon = 
+	cost = 2
+	
+	x = 11
+	y = 2
+	
+	prerequisite = { GRW_our_cause }
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_till_last_is_freed
+	icon = 
+	cost = 2
+	
+	x = 11
+	y = 3
+	
+	prerequisite = { GRW_last_push }
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_last_stand
+	icon = 
+	cost = 2
+	
+	x = 13
+	y = 2
+	
+	prerequisite = { GRW_our_cause }
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_till_last_falls
+	icon = 
+	cost = 2
+	
+	x = 13
+	y = 3
+	
+	prerequisite = { GRW_last_stand }
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_modern_rifles
+	icon = 
+	cost = 5
+	
+	x = 12
+	y = 4
+	
+	prerequisite = { GRW_our_cause }
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_militia
+	icon = 
+	cost = 4.3
+	
+	x = 10
+	y = 5
+	
+	prerequisite = { GRW_modern_rifles }
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_convince_liberals
+	icon = 
+	cost = 4.3
+	
+	x = 9
+	y = 6
+	
+	prerequisite = { GRW_militia }
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_raid_armouries
+	icon = 
+	cost = 4.3
+		
+	x = 11
+	y = 6
+	
+	prerequisite = { GRW_militia }
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_partisans
+	icon = 
+	cost = 4.3
+	
+	
+	x = 10
+	y = 7
+	
+	prerequisite = { GRW_convince_liberals }
+	prerequisite = { GRW_raid_armouries }
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_spoons_to_rifles
+	icon = 
+	cost = 4.3
+	
+	
+	x = 12
+	y = 5
+	
+	prerequisite = { GRW_modern_rifles }
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_homes_to_factories
+	icon = 
+	cost = 4.3
+	
+	
+	x = 12
+	y = 6
+	
+	prerequisite = { GRW_spoons_to_rifles }
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_ploughshares_to_machinery
+	icon = 
+	cost = 4.3
+	
+	
+	x = 12
+	y = 7
+	
+	prerequisite = { GRW_homes_to_factories }
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_foreign_support
+	icon = 
+	cost = 2
+	
+	
+	x = 14
+	y = 5
+	
+	prerequisite = { GRW_modern_rifles }
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_stalliongrad_support
+	icon = 
+	cost = 2
+	
+	
+	x = 13
+	y = 6
+	
+	prerequisite = { GRW_foreign_support }
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_infiltrate_labs
+	icon = 
+	cost = 2
+	
+	x = 15
+	y = 6
+	
+	prerequisite = { GRW_foreign_support }
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_modernizing_war
+	icon = 
+	cost = 2
+	
+	x = 14
+	y = 7
+	
+	prerequisite = { GRW_stalliongrad_support }
+	prerequisite = { GRW_infiltrate_labs }
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	completion_reward = {
+	}
+}
+
+shared_focus = {
+	id = GRW_red_knights
+	icon = 
+	cost = 4.3
+	
+	
+	x = 12
+	y = 9
+	
+	prerequisite = { 
+		GRW_homes_to_factories
+		GRW_modernizing_war
+	}
+	
+	prerequisite = {
+		GRW_ploughshares_to_machinery
+	}
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	completion_reward = {
+	}
+}
