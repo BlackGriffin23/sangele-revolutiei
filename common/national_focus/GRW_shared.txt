@@ -2,10 +2,10 @@
 
 shared_focus = {
 	id = GRW_liberation_is_nigh
-	icon = 
+	icon = GFX_focus_grw_flag
 	cost = 4.3
 	
-	x = 12
+	x = 4
 	y = 0
 	
 	ai_will_do = {
@@ -14,14 +14,19 @@ shared_focus = {
 	
 	completion_reward = {
 	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
+	}
 }
 
 shared_focus = {
 	id = GRW_famine_situation
-	icon = 
+	icon = GFX_goal_griffon_rice
 	cost = 2
 	
-	x = 11
+	relative_position_id = GRW_liberation_is_nigh
+	x = -2
 	y = 1
 	
 	prerequisite = { focus = GRW_liberation_is_nigh }
@@ -32,14 +37,19 @@ shared_focus = {
 	
 	completion_reward = {
 	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
+	}
 }
 
 shared_focus = {
 	id = GRW_our_cause
-	icon = 
+	icon = GFX_goal_red_star_guard
 	cost = 2
 
-	x = 12
+	relative_position_id = GRW_liberation_is_nigh
+	x = 0
 	y = 1
 	
 	prerequisite = { focus = GRW_liberation_is_nigh }
@@ -50,15 +60,19 @@ shared_focus = {
 	
 	completion_reward = {
 	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
+	}
 }
-
 
 shared_focus = {
 	id = GRW_revolutionary_press
-	icon = 
+	icon = GFX_goal_big_news
 	cost = 2
 	
-	x = 13
+	relative_position_id = GRW_liberation_is_nigh
+	x = 2
 	y = 1
 	
 	prerequisite = { focus = GRW_liberation_is_nigh }
@@ -69,15 +83,20 @@ shared_focus = {
 	
 	completion_reward = {
 	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
+	}
 }
 
 shared_focus = {
 	id = GRW_last_push
-	icon = 
+	icon = GFX_goal_planning_bonus
 	cost = 2
 	
-	x = 11
-	y = 2
+	relative_position_id = GRW_our_cause
+	x = -1
+	y = 1
 	
 	prerequisite = { focus = GRW_our_cause }
 	
@@ -87,15 +106,20 @@ shared_focus = {
 	
 	completion_reward = {
 	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
+	}
 }
 
 shared_focus = {
 	id = GRW_till_last_is_freed
-	icon = 
+	icon = GFX_focus_indy_swing_the_sword
 	cost = 2
 	
-	x = 11
-	y = 3
+	relative_position_id = GRW_our_cause
+	x = -1
+	y = 2
 	
 	prerequisite = { focus = GRW_last_push }
 	
@@ -105,15 +129,20 @@ shared_focus = {
 	
 	completion_reward = {
 	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
+	}
 }
 
 shared_focus = {
 	id = GRW_last_stand
-	icon = 
+	icon = GFX_goal_break_rifle
 	cost = 2
 	
-	x = 13
-	y = 2
+	relative_position_id = GRW_our_cause
+	x = 1
+	y = 1
 	
 	prerequisite = { focus = GRW_our_cause }
 	
@@ -123,15 +152,20 @@ shared_focus = {
 	
 	completion_reward = {
 	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
+	}
 }
 
 shared_focus = {
 	id = GRW_till_last_falls
-	icon = 
+	icon = GFX_goal_nested_fortifications
 	cost = 2
 	
-	x = 13
-	y = 3
+	relative_position_id = GRW_our_cause
+	x = 1
+	y = 2
 	
 	prerequisite = { focus = GRW_last_stand }
 	
@@ -141,15 +175,20 @@ shared_focus = {
 	
 	completion_reward = {
 	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
+	}
 }
 
 shared_focus = {
 	id = GRW_modern_rifles
-	icon = 
+	icon = GFX_goal_national_arsenal
 	cost = 5
 	
-	x = 12
-	y = 4
+	relative_position_id = GRW_our_cause
+	x = 0
+	y = 3
 	
 	prerequisite = { focus = GRW_our_cause }
 	
@@ -159,15 +198,20 @@ shared_focus = {
 	
 	completion_reward = {
 	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
+	}
 }
 
 shared_focus = {
 	id = GRW_militia
-	icon = 
+	icon = GFX_goal_conscription
 	cost = 4.3
 	
-	x = 10
-	y = 5
+	relative_position_id = GRW_modern_rifles
+	x = -3
+	y = 1
 	
 	prerequisite = { focus = GRW_modern_rifles }
 	
@@ -176,17 +220,21 @@ shared_focus = {
 	}
 	
 	completion_reward = {
+	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
 	}
 }
 
 shared_focus = {
 	id = GRW_convince_liberals
-	icon = 
+	icon = GFX_goal_ideology_democratic_socialist
 	cost = 4.3
 	
-	x = 9
-	y = 6
-	
+	relative_position_id = GRW_modern_rifles
+	x = -4
+	y = 2	
 	prerequisite = { focus = GRW_militia }
 	
 	ai_will_do = {
@@ -194,16 +242,21 @@ shared_focus = {
 	}
 	
 	completion_reward = {
+	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
 	}
 }
 
 shared_focus = {
-	id = GRW_raid_armouries
-	icon = 
+	id = GRW_civil_war_doctrine
+	icon = GFX_goal_officers
 	cost = 4.3
 		
-	x = 11
-	y = 6
+	relative_position_id = GRW_modern_rifles
+	x = -2
+	y = 2
 	
 	prerequisite = { focus = GRW_militia }
 	
@@ -212,20 +265,25 @@ shared_focus = {
 	}
 	
 	completion_reward = {
+	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
 	}
 }
 
 shared_focus = {
 	id = GRW_partisans
-	icon = 
+	icon = GFX_goal_griffon_soldier
 	cost = 4.3
 	
 	
-	x = 10
-	y = 7
+	relative_position_id = GRW_modern_rifles
+	x = -3
+	y = 3
 	
 	prerequisite = { focus = GRW_convince_liberals }
-	prerequisite = { focus = GRW_raid_armouries }
+	prerequisite = { focus = GRW_civil_war_doctrine }
 	
 	ai_will_do = {
 		factor = 40
@@ -233,16 +291,20 @@ shared_focus = {
 	
 	completion_reward = {
 	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
+	}
 }
 
 shared_focus = {
 	id = GRW_spoons_to_rifles
-	icon = 
+	icon = GFX_goal_generic_construct_mil_factory
 	cost = 4.3
 	
-	
-	x = 12
-	y = 5
+	relative_position_id = GRW_modern_rifles
+	x = 0
+	y = 1
 	
 	prerequisite = { focus = GRW_modern_rifles }
 	
@@ -252,16 +314,21 @@ shared_focus = {
 	
 	completion_reward = {
 	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
+	}
 }
 
 shared_focus = {
 	id = GRW_homes_to_factories
-	icon = 
+	icon = GFX_goal_socialist_industry
 	cost = 4.3
 	
 	
-	x = 12
-	y = 6
+	relative_position_id = GRW_modern_rifles
+	x = 0
+	y = 2
 	
 	prerequisite = { focus = GRW_spoons_to_rifles }
 	
@@ -271,16 +338,20 @@ shared_focus = {
 	
 	completion_reward = {
 	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
+	}
 }
 
 shared_focus = {
-	id = GRW_ploughshares_to_machinery
-	icon = 
+	id = GRW_ignorance_to_knowledge
+	icon = GFX_goal_communist_science
 	cost = 4.3
 	
-	
-	x = 12
-	y = 7
+	relative_position_id = GRW_modern_rifles
+	x = 0
+	y = 3
 	
 	prerequisite = { focus = GRW_homes_to_factories }
 	
@@ -290,16 +361,20 @@ shared_focus = {
 	
 	completion_reward = {
 	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
+	}
 }
 
 shared_focus = {
 	id = GRW_foreign_support
-	icon = 
+	icon = GFX_goal_foreign_diplomacy
 	cost = 2
 	
-	
-	x = 14
-	y = 5
+	relative_position_id = GRW_modern_rifles
+	x = 3
+	y = 1
 	
 	prerequisite = { focus = GRW_modern_rifles }
 	
@@ -309,16 +384,21 @@ shared_focus = {
 	
 	completion_reward = {
 	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
+	}
 }
 
 shared_focus = {
 	id = GRW_stalliongrad_support
-	icon = 
+	icon = GFX_focus_stg_cooperation_pony_griffon
 	cost = 2
 	
 	
-	x = 13
-	y = 6
+	relative_position_id = GRW_modern_rifles
+	x = 2
+	y = 2
 	
 	prerequisite = { focus = GRW_foreign_support }
 	
@@ -327,16 +407,21 @@ shared_focus = {
 	}
 	
 	completion_reward = {
+	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
 	}
 }
 
 shared_focus = {
-	id = GRW_infiltrate_labs
-	icon = 
+	id = GRW_infiltrate_armouries
+	icon = GFX_goal_national_artillery
 	cost = 2
 	
-	x = 15
-	y = 6
+	relative_position_id = GRW_modern_rifles
+	x = 4
+	y = 2
 	
 	prerequisite = { focus = GRW_foreign_support }
 	
@@ -345,44 +430,53 @@ shared_focus = {
 	}
 	
 	completion_reward = {
+	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
 	}
 }
 
 shared_focus = {
 	id = GRW_modernizing_war
-	icon = 
+	icon = GFX_goal_soviet_tankie
 	cost = 2
 	
-	x = 14
-	y = 7
+	relative_position_id = GRW_modern_rifles
+	x = 3
+	y = 3
 	
 	prerequisite = { focus = GRW_stalliongrad_support }
-	prerequisite = { focus = GRW_infiltrate_labs }
+	prerequisite = { focus = GRW_infiltrate_armouries }
 	
 	ai_will_do = {
 		factor = 40
 	}
 	
 	completion_reward = {
+	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
 	}
 }
 
 shared_focus = {
 	id = GRW_red_knights
-	icon = 
+	icon = GFX_focus_indy_red_griffon_knights
 	cost = 4.3
 	
-	
-	x = 12
-	y = 9
+	relative_position_id = GRW_modern_rifles
+	x = 0
+	y = 4
 	
 	prerequisite = { 
-		focus = GRW_homes_to_factories
+		focus = GRW_partisans
 		focus = GRW_modernizing_war
 	}
 	
 	prerequisite = {
-		focus = GRW_ploughshares_to_machinery
+		focus = GRW_ignorance_to_knowledge
 	}
 	
 	ai_will_do = {
@@ -390,5 +484,9 @@ shared_focus = {
 	}
 	
 	completion_reward = {
+	}
+	
+	bypass = {
+			has_global_flag = prywhen_civil_war_is_over
 	}
 }

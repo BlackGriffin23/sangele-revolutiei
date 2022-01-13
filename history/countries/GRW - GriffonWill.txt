@@ -67,6 +67,39 @@ declare_war_on = {
 	type = annex_everything
 }
 
+set_variable = {
+	var = redgladist_power
+	value = 40
+}
+set_variable = {
+	var = skynavist_power
+	value = 30
+}
+set_variable = {
+	var = voieist_power
+	value = 15
+}
+set_variable = {
+	var = vanguardist_power
+	value = 15
+}
+set_variable = {
+	var = redgladist_approval
+	value = 80
+}
+set_variable = {
+	var = skynavist_approval
+	value = 70
+}
+set_variable = {
+	var = voieist_approval
+	value = 45
+}
+set_variable = {
+	var = vanguardist_approval
+	value = 50
+}
+
 recruit_character = GRW_Theresa
 recruit_character = GRW_dorian_of_brodfeld
 recruit_character = GRW_princip_meyer_brantbeak
